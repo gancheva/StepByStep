@@ -1,0 +1,13 @@
+//
+//  TutorialViewController.h
+//  StepByStep
+//
+//  Created by iTract02 on 10/15/13.
+//  Copyright (c) 2013 iTract. All rights reserved.
+//
+
+#import "EmbeddableViewController.h"
+
+@interface TutorialViewController : EmbeddableViewController <UIScrollViewDelegate>
+
+@end

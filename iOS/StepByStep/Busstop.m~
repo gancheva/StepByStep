@@ -1,0 +1,18 @@
+//
+//  Busstop.m
+//  StepByStep
+//
+//  The model for a bus stop location
+//
+//  Created by Mark Boers on 11/11/13.
+//  Copyright (c) 2013 iTract. All rights reserved.
+//
+
+#import "Busstop.h"
+
+@implementation Busstop
+@synthesize stopId;
+@synthesize name;
+@synthesize agencyId;
+@synthesize location;
+@end

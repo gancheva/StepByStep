@@ -1,0 +1,50 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Step_By_Step.OvchipcardTutorialMenu.OvchipcardTutorialPage1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="False">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Background="{StaticResource ThemeColor}">
+            <Image Source="../Assets/Images/stappen.png" Tap="Steps_Tap"/>
+            <TextBlock Width="250" Text="1. De OV-chipkaart" Margin="60,0,0,0" Style="{StaticResource InfoPageTitle}"/>
+            <Image Source="../Assets/Images/pijlrechts.png" Tap="next_tap" Margin="40, 0, 0, 0"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="0,0,0,0">
+            <ScrollViewer>
+
+                <StackPanel>
+                    <TextBlock Text="De OV-chipkaart" Style="{StaticResource InfoPageSubTitle}" Margin="20, 20" />
+                    <TextBlock Margin="20, 0, 20, 20" Style="{StaticResource InfoPageText}" >
+                        Met de OV-chipkaart kunt u in heel Nederland reizen met de bus, de trein, de tram en de metro. U moet zelf een OV-chipkaart aanschaffen en er ‘saldo’ opzetten. Zodra de kaart is opgeladen met een geldbedrag, kunt u ermee reizen. Een OV-chipkaart kost 7,50 en is vijf jaar geldig. U kunt zelf bepalen hoeveel geld u op de kaart zet. ledere keer als u een reis maakt met de OV-chipkaart, wordt er geld van de kaart afgeschreven.
+                    </TextBlock>
+                    
+                    <TextBlock Margin="20, 40, 20, 10" Style="{StaticResource InfoPageSubSubTitle}" >Persoonlijke of anonieme OV-chipkaart</TextBlock>
+                    <TextBlock Margin="20, 0, 20, 20" Style="{StaticResource InfoPageText}" >
+                        U kunt kiezen tussen een persoonlijke OV-chipkaart en een anonieme OV-chipkaart. Op de persoonlijke kaart staat uw naam en uw gegevens zijn eraan gekoppeld. U bent de enige die van deze kaart mag gebruiken. De anonieme kaart heeft geen persoonlijke gegevens en kan ook door een andere persoon gebruikt worden. Elke reiziger heeft een eigen OV-chipkaart nodig.
+                    </TextBlock>
+                </StackPanel>
+            </ScrollViewer>
+
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>

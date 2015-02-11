@@ -1,0 +1,74 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Step_By_Step.BusTutorialPage2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="False">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Background="{StaticResource ThemeColor}">
+            <Image Source="../Assets/Images/stappen.png" Tap="Steps_Tap"/>
+            <Image Source="../Assets/Images/pijllinks.png" Margin="20,0,0,0" Tap="back_tap"/>
+            <TextBlock Width="250" Text="2. Busreis betalen" Margin="20,0,0,0" Style="{StaticResource InfoPageTitle}"/>
+            <Image Source="../Assets/Images/pijlrechts.png" Margin="0,0,0,0" Tap="next_tap"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="0, 0, 0, 0" >
+            <ScrollViewer>
+       
+            <StackPanel>
+                <TextBlock Text="Busreis betalen" Style="{StaticResource InfoPageSubTitle}" Margin="20, 20" />
+                <TextBlock Margin="20, 0, 0, 10" Style="{StaticResource InfoPageText}" >Er zijn twee manieren om uw reis te betalen:</TextBlock>
+                <Grid>                   
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                        <StackPanel Orientation="Horizontal" Grid.Row="0" Tap="eurokaartjes_tap">
+                            <TextBlock Width="190" Margin="20, 0, 0, 10" Style="{StaticResource InfoPageText}">1. Eurokaartje</TextBlock>
+                            <Image Source="../Assets/Images/informatieicoon.png" Height="20" Margin="0,0,0,6"/>
+                        </StackPanel>
+                        <StackPanel Grid.Row="1" Orientation="Horizontal" Tap="ov_chipkaart_tap">
+                            <TextBlock Width="190" Margin="20, 0, 0, 10" Style="{StaticResource InfoPageText}">2. de OV-chipkaart</TextBlock>
+                            <Image Source="../Assets/Images/informatieicoon.png" Height="20" Margin="0,0,0,6"/>
+                        </StackPanel>
+                    </Grid>
+                
+                <TextBlock Margin="20, 40, 20, 10" Style="{StaticResource InfoPageSubSubTitle}" >Eurokaartjes</TextBlock>
+                <TextBlock Margin="20, 0, 20, 10" Style="{StaticResource InfoPageText}" >
+                    Reist u maar af en toe met de bus? Dan kunt u in de bus bij de chauffeur een kaartje kopen. U betaalt met contant geld. Welk kaartje u nodig hebt, hangt af van de afstand die u reist. De chauffeur weet welk kaartje u nodig hebt, als u vertelt waar u heen moet. Een kaartje kost 2, 5 of 8 euro. Er is ook een Dagkaart voor 16 euro of een Dal-Dagkaart voor 10 euro.
+                </TextBlock>
+                <TextBlock Margin="20, 0, 20, 20" Style="{StaticResource InfoPageText}">
+                    De Dal-Dagkaart is geldig doordeweeks na 9 uur. In het weekend en in vakanties is de Dal-Dagkaart de hele dag geldig.
+                </TextBlock>
+                <Image Source="../Assets/Images/bus_tut_img1_with_play.png" Margin="20, 0, 20, 0" Height="200" Tap="open_video_tap" />
+                
+                <TextBlock Margin="20, 40, 20, 10" Style="{StaticResource InfoPageSubSubTitle}" >De OV-chipkaart</TextBlock>
+                <TextBlock Margin="20, 0, 20, 20" Style="{StaticResource InfoPageText}" >
+                    Met de OV-chipkaart kunt u in heel Nederland reizen met de bus, de trein, de tram en de metro. U moet zelf een OV-chipkaart aanschaffen en er ‘saldo’ opzetten. Zodra de kaart is opgeladen met een geldbedrag, kunt u ermee reizen. Een OV-chipkaart kost 7,50 en is vijfjaar geldig. U kunt zelf bepalen hoeveel geld u op de kaart zet. ledere keer als u een reis maakt met de OV-chipkaart, wordt er geld van de kaart afgeschreven.
+                </TextBlock>
+                <Image Source="../Assets/Images/ov_chipkaart_back.jpg" Margin="20, 0, 20, 20" Height="200" />
+            </StackPanel>
+            </ScrollViewer>
+        </Grid>
+        <Canvas Grid.RowSpan="2" Margin="0" Height="1920" Width="1080"  Background="#66000000" Name="DimmerControl" Visibility="Collapsed" Tap="DimmerControl_Tap" />
+    </Grid>
+
+</phone:PhoneApplicationPage>

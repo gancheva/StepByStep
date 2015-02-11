@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarStyle="outsideInset">
+ 	
+ 	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical">
+	    
+ 	    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_weight="1"
+        >
+    		<TextView
+	 	       android:layout_width="0dp"
+		       android:layout_height="wrap_content"
+		       android:padding="10dp"
+			   android:textSize="20dp"
+			   android:textStyle="bold"
+		       android:text="@string/train_dialog_negentwee_title"
+		       android:id="@+id/train_dialog_negentwee_title"
+		       android:layout_weight=".70"/>
+	    		
+	   	   <ImageButton 
+		       android:id="@+id/exitDialogButton"
+		       android:src="@drawable/exit_button"
+		       android:layout_width="0dp"
+		       android:layout_height="50dp"
+		       android:layout_toRightOf="@id/train_dialog_negentwee_title"
+		       android:layout_alignParentRight="true"
+			   android:layout_gravity="end"
+			   android:background="#00FFFFFF"
+		       android:adjustViewBounds="true"
+		       android:scaleType="centerInside"
+		       android:layout_weight=".30"/>
+		       
+ 	   </LinearLayout>
+ 	   
+	   
+	   <TextView 
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:padding="10dp"
+		   android:textSize="15dp"
+		   android:layout_gravity="left"
+		   android:text="@string/train_dialog_negentwee_text_1"
+	       />
+	   
+	   
+	   <TextView 
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:padding="10dp"
+		   android:textSize="15dp"
+		   android:layout_gravity="left"
+		   android:textStyle="bold"
+	       android:text="@string/train_dialog_negentwee_subtitle_1"
+	       />
+		
+	   <TextView 
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:padding="10dp"
+		   android:textSize="15dp"
+		   android:layout_gravity="left"
+		   android:text="@string/train_dialog_negentwee_text_2"
+	       />
+	   	  
+	   <TextView 
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:padding="10dp"
+		   android:textSize="15dp"
+		   android:layout_gravity="left"
+		   android:textStyle="bold"
+	       android:text="@string/train_dialog_negentwee_subtitle_2"
+	       />
+	  
+	   <TextView 
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:padding="10dp"
+		   android:textSize="15dp"
+		   android:layout_gravity="left"
+		   android:text="@string/train_dialog_negentwee_text_3"
+	       />
+	   
+	</LinearLayout>
+</ScrollView>

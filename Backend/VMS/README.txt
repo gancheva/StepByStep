@@ -1,0 +1,1 @@
+AjaxCrud used under the free license for individuals and Non profit organizations.

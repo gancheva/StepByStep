@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarStyle="outsideInset">
+	
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" >
+
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/train_5_title"
+	        android:textSize="20sp"
+	        android:textStyle="bold" />
+
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="10dp"
+	        android:text="@string/train_tut_5_text_1"
+	        android:textSize="15sp"/>
+	    
+	    <ImageView 
+	        android:layout_width="fill_parent"
+	        android:layout_height="180dp"
+	        android:rotation="-90"
+	        android:src="@drawable/bus_tut_img5"/>
+	    </LinearLayout>
+</ScrollView>

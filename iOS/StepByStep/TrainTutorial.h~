@@ -1,0 +1,14 @@
+//
+//  TrainTutorial.h
+//  StepByStep
+//
+//  Created by Mark Boers on 28/10/13.
+//  Copyright (c) 2013 iTract. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import "ITutorial.h"
+
+@interface TrainTutorial : ITutorial
+
+@end

@@ -1,0 +1,59 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Step_By_Step.BusTutorialMenu.BusTutorialPage3"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="False">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Background="{StaticResource ThemeColor}">
+            <Image Source="../Assets/Images/stappen.png" Tap="Steps_Tap"/>
+            <Image Source="../Assets/Images/pijllinks.png" Margin="20,0,0,0" Tap="back_tap"/>
+            <TextBlock Width="250" Text="3. Bij de bushalte" Margin="20,0,0,0" Style="{StaticResource InfoPageTitle}"/>
+            <Image Source="../Assets/Images/pijlrechts.png" Margin="0,0,0,0" Tap="next_tap"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="0,0,0,0">
+            <ScrollViewer>
+                <StackPanel>
+                    <TextBlock Text="Bij de bushalte" Style="{StaticResource InfoPageSubTitle}" Margin="20, 20" />
+                    <TextBlock Text="Naar de bushalte" Style="{StaticResource InfoPageSubSubTitle}" Margin="20, 0, 20, 10"/>
+                    <TextBlock Style="{StaticResource InfoPageText}" Margin="20, 0, 20, 10" >
+                        We raden u aan om ongeveer 5 minuten voor vertrek bij de bushalte te zijn. Op het gele haltebord staan de lijnen die vanaf de halte vertrekken. Onder het haltebord of in het bushokje hangt een overzicht van de vertrektijden van de bus.
+                    </TextBlock>
+                    <TextBlock Margin="20, 40, 20, 10" Style="{StaticResource InfoPageSubSubTitle}" >Instappen</TextBlock>
+                    <TextBlock  Margin="20, 0, 20, 20" Style="{StaticResource InfoPageText}" >
+                        Voorop de bus staan het lijnnurnmer en de plaats waar de bus heen gaat. Daaraan ziet u welke bus u moet hebben.
+                    </TextBlock>
+                    <Image Source="../Assets/Images/bus_herkennen.jpg" Margin="20, 0, 20, 0" Height="200" />
+                    <TextBlock  Margin="20, 20, 20, 20" Style="{StaticResource InfoPageText}">
+                        Als de bus waarmee u wilt reizen eraan komt, steek dan uw hand op. De chauffeur weet dan zeker dat u mee wilt.
+                    </TextBlock>
+                    <Image Source="../Assets/Images/hand_omhoog.jpg" Margin="20, 0, 20, 0" Height="200" />
+                    <TextBlock  Margin="20, 20, 20, 20" Style="{StaticResource InfoPageText}" >
+                        Houd bij het instappen uw OV-chipkaart voor de kaartlezer. Heeft u geen OV-chipkaart? Koop dan een kaartje bij de chauffeur.  
+                    </TextBlock>
+                    <Image Source="../Assets/Images/inchecken.jpg" Margin="20, 0, 20, 20" Height="200" />
+
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>

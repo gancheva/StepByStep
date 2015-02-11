@@ -1,0 +1,16 @@
+//
+//  ITutorial.m
+//  StepByStep
+//
+//  All tutorial objects inherit this class
+//  A tutorial object contains a set of titles and viewcontrollers in the form of arrays
+//
+//  Created by Mark Boers on 31/10/13.
+//  Copyright (c) 2013 iTract. All rights reserved.
+//
+
+#import "ITutorial.h"
+
+@implementation ITutorial
+
+@end

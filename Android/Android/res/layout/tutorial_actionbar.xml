@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="5dp">
+    
+    <ImageButton
+        android:id="@+id/menubutton"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="match_parent"
+        android:background="#00FFFFFF"
+        android:scaleType="centerInside"
+        android:src="@+drawable/stappen"
+        android:layout_alignParentLeft="true"/>
+
+    
+
+	<ImageButton android:src="@drawable/left_button"
+                 android:background="#00FFFFFF"
+                 android:layout_width="30dp"
+                 android:layout_height="match_parent"
+                 android:scaleType="centerInside"
+                 android:id="@+id/leftbutton"
+                 android:layout_toRightOf="@+id/menubutton"/>
+
+	<TextView
+	    android:id="@id/pagetitle"
+	    android:layout_width="fill_parent"
+	    android:layout_height="match_parent"
+	    android:layout_toRightOf="@id/leftbutton"
+	    android:layout_toLeftOf="@+id/rightbutton"
+	    android:gravity="center"
+	    android:textColor="#FFFFFF"
+	    android:textSize="20dp" />
+
+	 <ImageButton android:src="@drawable/right_button"
+                 android:background="#00FFFFFF"
+                 android:layout_width="30dp"
+                 android:layout_height="match_parent"
+                 android:scaleType="centerInside"
+                 android:id="@id/rightbutton"
+                 android:layout_alignParentRight="true"/>
+</RelativeLayout>

@@ -1,0 +1,50 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Step_By_Step.OvchipcardTutorialMenu.OvchipcardTutorialPage6"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="False">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Background="{StaticResource ThemeColor}">
+            <Image Source="../Assets/Images/stappen.png" Tap="Steps_Tap"/>
+            <Image Source="../Assets/Images/pijllinks.png" Margin="20,0,0,0" Tap="back_tap"/>
+            <TextBlock Width="250" Text="6. Vergeten uit te checken" Style="{StaticResource InfoPageTitle}" Margin="20,0,0,0"/>
+            <Image Source="../Assets/Images/pijlrechts.png" Tap="next_tap"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="0,0,0,0">
+            <ScrollViewer>
+                <StackPanel>
+                    <TextBlock Text="Vergeten uit te checken" Style="{StaticResource InfoPageSubTitle}" Margin="20, 20" />
+                    <TextBlock Style="{StaticResource InfoPageText}" Margin="20, 0, 20, 10" >
+                        ledere keer als u incheckt met de OV-chipkaart wordt automatisch een bedrag afgeschreven als “borg” voor de reis. De vervoerder krijgt dat bedrag totdat u uitcheckt. Dan wordt het bedrag voor de reis afgeschreven en krijgt u de “borg” terug. Voor de bus is deze borg 4 euro. Voor de trein is dat 20 euro als u zonder korting reist en 10 euro als u met korting reist.
+                    </TextBlock>
+                    <TextBlock Style="{StaticResource InfoPageText}" Margin="20, 0, 20, 10" >
+                        Als u vergeet uit te checken kunt u het teveel betaalde bedrag terug krijgen. U vult daarvoor een formulier in op internet bij de vervoerder of u vraagt een formulier op bij de klantenservice. U kunt ook geld terug krijgen als er een fout is gemaakt bij het afschrijven of als de kaartlezer kapot is en u niet kunt uitchecken.
+                    </TextBlock>
+                    <TextBlock  Margin="20, 0, 20, 20" Style="{StaticResource InfoPageText}" >
+                        Wilt u echter van de trein overstappen op een bus, dan checkt u uit op het station en checkt u vervolgens weer in in de bus.
+                    </TextBlock>
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>

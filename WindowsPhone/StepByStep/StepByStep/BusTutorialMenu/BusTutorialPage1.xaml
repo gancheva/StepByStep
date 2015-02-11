@@ -1,0 +1,72 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Step_By_Step.BusTutorialPage1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="False">
+    
+        
+
+        <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="White">      
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Background="{StaticResource ThemeColor}">
+            <Image Source="../Assets/Images/stappen.png" Tap="Steps_Tap"/>
+            <TextBlock Width="250" Text="1. Busreis plannen" Margin="60,0,40,0" Style="{StaticResource InfoPageTitle}" />
+            <Image Source="../Assets/Images/pijlrechts.png" Tap="next_tap"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="0,0,0,0">
+            <ScrollViewer>
+                <StackPanel>                    
+                    <TextBlock Text="Uw busreis plannen" Style="{StaticResource InfoPageSubTitle}" Margin="20, 20" />
+                    <TextBlock Text="Voordat u op reis gaat is het handig een aantal dingen te weten:" Style="{StaticResource InfoPageSubSubTitle}" Margin="20, 0, 0, 20"/>
+
+                    <TextBlock Margin="40, 0, 40, 10" Style="{StaticResource InfoPageText}" >1. Van welk adres vertrekt u?</TextBlock>
+                    <TextBlock Margin="40, 0, 40, 10" Style="{StaticResource InfoPageText}" >2. Waar is de bushalte?</TextBlock>
+                    <TextBlock Margin="40, 0, 40, 10" Style="{StaticResource InfoPageText}" >3. Wat is uw bestemming?</TextBlock>
+                    <TextBlock Margin="40, 0, 40, 10" Style="{StaticResource InfoPageText}" >4. Op welke datum wilt u reizen?</TextBlock>
+                    <TextBlock Margin="40, 0, 40, 10" Style="{StaticResource InfoPageText}" >5. Hoe laat wilt u vertrekken (of aankomen)?</TextBlock>
+
+                    <TextBlock Text="Met deze gegevens kunt u uw reis gaan plannen. Er zijn drie manieren om uw reis te plannen en/of reistijden te achterhalen:" Style="{StaticResource InfoPageText}" Margin="20, 40, 30, 20"/>
+
+                    <Grid>                        
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <StackPanel Grid.Row="0" Orientation="Horizontal" Tap="internet_planning_tap">
+                            <TextBlock Width="190" Style="{StaticResource InfoPageText}" Margin="40, 0, 0, 10">1. Via het internet</TextBlock>
+                        <Image Source="../Assets/Images/informatieicoon.png" Height="20"  Margin="0, 0, 0, 6" />
+                        </StackPanel>
+                        <StackPanel Grid.Row="1" Orientation="Horizontal" Tap="telephone_planning_tap">
+                            <TextBlock Width="190" Style="{StaticResource InfoPageText}" Margin="40, 0, 0, 10">2. Telefonisch</TextBlock>
+                        <Image Grid.Column="1" Source="../Assets/Images/informatieicoon.png" Height="20" Margin="0, 0, 0, 6"/>
+                        </StackPanel>
+                        <StackPanel Grid.Row="2" Orientation="Horizontal" Tap="bus_stop_planning_tap">
+                            <TextBlock Width="190" Style="{StaticResource InfoPageText}" Margin="40, 0, 0, 10">3. Bij de bushalte</TextBlock>
+                        <Image Source="../Assets/Images/informatieicoon.png" Height="20" Margin="0, 0, 0, 6"/>
+                        </StackPanel>
+                    </Grid>
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+            <Canvas Grid.RowSpan="2" Margin="0" Height="1920" Width="1080"  Background="#66000000" Name="DimmerControl" Visibility="Collapsed" Tap="DimmerControl_Tap" />
+        </Grid>        
+    
+</phone:PhoneApplicationPage>

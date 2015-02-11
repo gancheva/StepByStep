@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{265308B7-60C1-438C-87ED-C47F62E732B3}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Step_By_Step</RootNamespace>
+    <AssemblyName>Step By Step</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <TargetFrameworkProfile>WindowsPhone71</TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>Step_By_Step.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>Step_By_Step.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Devices.Sensors" />
+    <Reference Include="Microsoft.Phone" />
+    <Reference Include="Microsoft.Phone.Controls, Version=7.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone.Controls.Maps, Version=7.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone.Interop" />
+    <Reference Include="system.data.linq" />
+    <Reference Include="System.Device" />
+    <Reference Include="System.Observable" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Servicemodel" />
+    <Reference Include="System.Servicemodel.Web" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationTutorial\ApplicationTutorialPage1.xaml.cs">
+      <DependentUpon>ApplicationTutorialPage1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationTutorial\ApplicationTutorialPage2.xaml.cs">
+      <DependentUpon>ApplicationTutorialPage2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BusStopsInfo\BusStopTimeTable.xaml.cs">
+      <DependentUpon>BusStopTimeTable.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BusStopsInfo\Map.xaml.cs">
+      <DependentUpon>Map.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BusTutorialMenu\BusTutorialPage1.xaml.cs">
+      <DependentUpon>BusTutorialPage1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BusTutorialMenu\BusTutorialPage2.xaml.cs">
+      <DependentUpon>BusTutorialPage2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BusTutorialMenu\BusTutorialPage3.xaml.cs">
+      <DependentUpon>BusTutorialPage3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BusTutorialMenu\BusTutorialPage4.xaml.cs">
+      <DependentUpon>BusTutorialPage4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BusTutorialMenu\BusTutorialPage5.xaml.cs">
+      <DependentUpon>BusTutorialPage5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BusTutorialMenu\BusTutorialVideo1.xaml.cs">
+      <DependentUpon>BusTutorialVideo1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu\ApplicationTutorial.xaml.cs">
+      <DependentUpon>ApplicationTutorial.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu\BushaltesInfo.xaml.cs">
+      <DependentUpon>BushaltesInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu\BusTutorial.xaml.cs">
+      <DependentUpon>BusTutorial.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu\OvchipcardTutorial.xaml.cs">
+      <DependentUpon>OvchipcardTutorial.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu\TrainTutorial.xaml.cs">
+      <DependentUpon>TrainTutorial.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OvchipcardTutorialMenu\OvchipcardTutorialPage1.xaml.cs">
+      <DependentUpon>OvchipcardTutorialPage1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OvchipcardTutorialMenu\OvchipcardTutorialPage2.xaml.cs">
+      <DependentUpon>OvchipcardTutorialPage2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OvchipcardTutorialMenu\OvchipcardTutorialPage3.xaml.cs">
+      <DependentUpon>OvchipcardTutorialPage3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OvchipcardTutorialMenu\OvchipcardTutorialPage4.xaml.cs">
+      <DependentUpon>OvchipcardTutorialPage4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OvchipcardTutorialMenu\OvchipcardTutorialPage5.xaml.cs">
+      <DependentUpon>OvchipcardTutorialPage5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OvchipcardTutorialMenu\OvchipcardTutorialPage6.xaml.cs">
+      <DependentUpon>OvchipcardTutorialPage6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OvchipcardTutorialMenu\OvchipcardTutorialPage7.xaml.cs">
+      <DependentUpon>OvchipcardTutorialPage7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TrainTutorialMenu\TrainTutorialPage1.xaml.cs">
+      <DependentUpon>TrainTutorialPage1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TrainTutorialMenu\TrainTutorialPage2.xaml.cs">
+      <DependentUpon>TrainTutorialPage2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TrainTutorialMenu\TrainTutorialPage3.xaml.cs">
+      <DependentUpon>TrainTutorialPage3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TrainTutorialMenu\TrainTutorialPage4.xaml.cs">
+      <DependentUpon>TrainTutorialPage4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TrainTutorialMenu\TrainTutorialPage5.xaml.cs">
+      <DependentUpon>TrainTutorialPage5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TrainTutorialMenu\TrainTutorialPage6.xaml.cs">
+      <DependentUpon>TrainTutorialPage6.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="ApplicationTutorial\ApplicationTutorialPage1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ApplicationTutorial\ApplicationTutorialPage2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BusStopsInfo\BusStopTimeTable.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BusStopsInfo\Map.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BusTutorialMenu\BusTutorialPage1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BusTutorialMenu\BusTutorialPage2.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BusTutorialMenu\BusTutorialPage3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BusTutorialMenu\BusTutorialPage4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BusTutorialMenu\BusTutorialPage5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BusTutorialMenu\BusTutorialVideo1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainMenu\ApplicationTutorial.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainMenu\BushaltesInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainMenu\BusTutorial.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainMenu\OvchipcardTutorial.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainMenu\TrainTutorial.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OvchipcardTutorialMenu\OvchipcardTutorialPage1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OvchipcardTutorialMenu\OvchipcardTutorialPage2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OvchipcardTutorialMenu\OvchipcardTutorialPage3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OvchipcardTutorialMenu\OvchipcardTutorialPage4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OvchipcardTutorialMenu\OvchipcardTutorialPage5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OvchipcardTutorialMenu\OvchipcardTutorialPage6.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OvchipcardTutorialMenu\OvchipcardTutorialPage7.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TrainTutorialMenu\TrainTutorialPage1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TrainTutorialMenu\TrainTutorialPage2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TrainTutorialMenu\TrainTutorialPage3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TrainTutorialMenu\TrainTutorialPage4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TrainTutorialMenu\TrainTutorialPage5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TrainTutorialMenu\TrainTutorialPage6.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\borden_met_bestemmingen.jpg" />
+    <Content Include="Assets\Images\bord_boven_perron.jpg" />
+    <Content Include="Assets\Images\bus.png" />
+    <Content Include="Assets\Images\busstop_icon.png" />
+    <Content Include="Assets\Images\busstop_marker.png" />
+    <Content Include="Assets\Images\bus_herkennen.jpg" />
+    <Content Include="Assets\Images\bus_tut_img1_with_play.png" />
+    <Content Include="Assets\Images\chipkaart.png" />
+    <Content Include="Assets\Images\exit_button.png" />
+    <Content Include="Assets\Images\fotoeurokaartje.png" />
+    <Content Include="Assets\Images\hand_omhoog.jpg" />
+    <Content Include="Assets\Images\inchecken.jpg" />
+    <Content Include="Assets\Images\informatieicoon.png" />
+    <Content Include="Assets\Images\informatie_op_schermen.jpg" />
+    <Content Include="Assets\Images\kaartjesautomaten.jpg" />
+    <Content Include="Assets\Images\kaartlezer.jpg" />
+    <Content Include="Assets\Images\kaartlezers_trein.jpg" />
+    <Content Include="Assets\Images\kaartlezer_bus.jpg" />
+    <Content Include="Assets\Images\map_icon.png" />
+    <Content Include="Assets\Images\menu.png" />
+    <Content Include="Assets\Images\my_position_icon.png" />
+    <Content Include="Assets\Images\ov_chipkaart_back.jpg" />
+    <Content Include="Assets\Images\pijllinks.png" />
+    <Content Include="Assets\Images\pijlrechts.png" />
+    <Content Include="Assets\Images\pijltje.png" />
+    <Content Include="Assets\Images\qbuzz.png" />
+    <Content Include="Assets\Images\speaker_icon.png" />
+    <Content Include="Assets\Images\stappen.png" />
+    <Content Include="Assets\Images\swipe_icon.jpg" />
+    <Content Include="Assets\Images\table for popup.png" />
+    <Content Include="Assets\Images\trein.png" />
+    <Content Include="Assets\Images\uitchecken.jpg" />
+    <Content Include="Assets\Images\uitleg.png" />
+    <Content Include="Background.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="exit_button.png" />
+    <Content Include="SplashScreenImage.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>

@@ -1,0 +1,20 @@
+//
+//  NavigationTemplateViewController.h
+//  StepByStep
+//
+//  Created by iTract02 on 10/15/13.
+//  Copyright (c) 2013 iTract. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "EmbeddableViewController.h"
+
+@interface NavigationTemplateViewController : UIViewController
+
+@property (nonatomic, strong) EmbeddableViewController *displayedController;
+@property (weak, nonatomic) IBOutlet UILabel *displayedTitle;
+@property (nonatomic, readwrite) NSUInteger orientation;
+
+-(void)refreshTitle;
+
+@end

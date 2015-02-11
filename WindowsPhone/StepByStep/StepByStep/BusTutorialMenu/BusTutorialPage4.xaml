@@ -1,0 +1,60 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Step_By_Step.BusTutorialMenu.BusTutorialPage4"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="False">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Background="{StaticResource ThemeColor}">
+            <Image Source="../Assets/Images/stappen.png" Tap="Steps_Tap"/>
+            <Image Source="../Assets/Images/pijllinks.png" Margin="20,0,0,0" Tap="back_tap"/>
+            <TextBlock Width="250" Text="4. De busreis" Margin="20,0,0,0" Style="{StaticResource InfoPageTitle}"/>
+            <Image Source="../Assets/Images/pijlrechts.png" Margin="0,0,0,0" Tap="next_tap"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="0,0,0,0">
+            <ScrollViewer>
+                <StackPanel>
+                    <TextBlock Text="De busreis" Style="{StaticResource InfoPageSubTitle}" Margin="20, 20" />
+                    <TextBlock Text="Overstappen" Style="{StaticResource InfoPageSubSubTitle}" Margin="20, 0, 20, 10"/>
+                    <TextBlock Margin="20, 0, 20, 10" Style="{StaticResource InfoPageText}" >
+                        Moet u overstappen op een andere bus? Zeg het tegen de chauffeur, zodat hij de chauffeur van de bus die u moet hebben kan waarschuwen.
+                    </TextBlock>
+                    <TextBlock Margin="20, 40, 20, 10" Style="{StaticResource InfoPageSubSubTitle}" >Reisinformatie op de schermen</TextBlock>
+                    <TextBlock Style="{StaticResource InfoPageText}" Margin="20, 0, 20, 10" >
+                        Op de schermen in de bus kunt u de namen van de haltes zien waar de bus als eerste langskomt. Zo kunt u zien wanneer uw uitstaphalte komt. De haltenamen worden ook omgeroepen.
+                    </TextBlock>
+                    <TextBlock Style="{StaticResource InfoPageText}" Margin="20, 0, 20, 20" >
+                        In de bussen die naar een treinstation rijden, kunt u op de schermen ook lezen hoe laat de eerstvolgende treinen vertrekken.
+                    </TextBlock>
+                    <Image Source="../Assets/Images/informatie_op_schermen.jpg" Margin="20, 0, 20, 0" Height="200" />
+
+                    
+                    <TextBlock Margin="20, 40, 20, 10" Style="{StaticResource InfoPageSubSubTitle}" >Uitstappen</TextBlock>
+                    <TextBlock Style="{StaticResource InfoPageText}" Margin="20, 0, 20, 20" >
+                        Druk op tijd op de stopknop als u er bij de eerstvolgende halte uit moet. Reist u met de OV-chipkaart, houdt uw kaart dan bij de hand. Bij het uitstappen houdt u uw OV-chipkaart voor de kaartlezer om uit te checken.
+                    </TextBlock>
+                    <Image Source="../Assets/Images/uitchecken.jpg" Margin="20, 0, 20, 20" Height="200" />
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>

@@ -1,0 +1,57 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Step_By_Step.OvchipcardTutorialMenu.OvchipcardTutorialPage7"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="False">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Background="{StaticResource ThemeColor}">
+            <Image Source="../Assets/Images/stappen.png" Tap="Steps_Tap"/>
+            <Image Source="../Assets/Images/pijllinks.png" Margin="20,0,0,0" Tap="back_tap"/>
+            <TextBlock Width="250" Text="7. OV-chipkaart defect of verloren" Margin="20,0,0,0"  Style="{StaticResource InfoPageTitle}"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="0,0,0,0">
+            <ScrollViewer>
+                <StackPanel>
+                    <TextBlock Text="OV-chipkaart defect of verloren" Style="{StaticResource InfoPageSubTitle}" Margin="20, 20" />
+                    <TextBlock Style="{StaticResource InfoPageText}" Margin="20, 0, 20, 20" >
+                        Uw OV-chipkaart is defect wanneer de kaartlezer in de bus geen enkele reactie geeft. Er gaat geen groen of rood lampje branden en u hoort geen geluidssignaal. Een rood lampje betekent dat uw kaart niet defect is; u heeft onvoldoende saldo, geen geldig abonnement of uw kaart/saldo is geblokkeerd. Informeer bij de klantenservice van Qbuzz hoe u een defecte kaart kunt inleveren en een nieuwe aan kunt vragen. Het telefoonnummer van de klantenservice is 0900 - 72 89 965 (lokaal tarief).
+                    </TextBlock>
+
+                    <TextBlock Margin="20, 40, 20, 10" Style="{StaticResource InfoPageSubSubTitle}" >Blokkeren bij verlies of diefstal</TextBlock>
+                    <TextBlock Margin="20, 0, 20, 10" Style="{StaticResource InfoPageText}" >
+                        Bent u uw persoonlijke OV-chipkaart kwijt door verlies of diefstal? Via uw account op OV-chipkaart.nl kunt uw kaart laten blokkeren en een vervangende OV-chipkaart aanvragen. Op de vervangende kaart worden de reisproducten gezet die oude kaart stonden. Uw saldo wordt teruggestort op uw bankrekening. Als u gebruik maakt van ‘automatisch opladen', hoeft u dit niet apart stop te zetten. Heeft u geen account op OV-chipkaart.nl? Neem dan contact op met de Klantenservice 0V-chipkaart. Het telefoonnummer is 0900-0980 ( 0,10 euro p.m.). Een anonieme OV-chipkaart kan niet worden geblokkeerd.
+                    </TextBlock>
+
+                    <TextBlock Margin="20, 40, 20, 10" Style="{StaticResource InfoPageText}" >
+                        Dit was de laatste stap in het onderdeel "OV-Chipkaart info".
+                    </TextBlock>
+
+                    <TextBlock Style="{StaticResource InfoPageText}" Margin="20, 40, 20, 20" Foreground="Gray" Tap="go_to_main_menu_tap">
+                    <Underline> Klik hier om terug te gaan naar het hoofdmenu </Underline>
+                    </TextBlock>
+
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>

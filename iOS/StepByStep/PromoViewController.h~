@@ -1,0 +1,13 @@
+//
+//  PromoViewController.h
+//  coldwell-brasil
+//
+//  Created by Mark on 06-06-13.
+//  Copyright (c) 2013 Dibbit. All rights reserved.
+//
+
+#import <MediaPlayer/MediaPlayer.h>
+
+@interface PromoViewController : MPMoviePlayerViewController
+
+@end

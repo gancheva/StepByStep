@@ -1,0 +1,58 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Step_By_Step.OvchipcardTutorialMenu.OvchipcardTutorialPage5"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="False">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Background="{StaticResource ThemeColor}">
+            <Image Source="../Assets/Images/stappen.png" Tap="Steps_Tap"/>
+            <Image Source="../Assets/Images/pijllinks.png" Margin="20,0,0,0" Tap="back_tap"/>
+            <TextBlock Width="250" Text="5. OV-chipkaart in de trein" Margin="20,0,0,0" Style="{StaticResource InfoPageTitle}"/>
+            <Image Source="../Assets/Images/pijlrechts.png" Tap="next_tap"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="0,0,0,0">
+            <ScrollViewer>
+                <StackPanel>
+                    <TextBlock Text="OV-chipkaart in de trein" Style="{StaticResource InfoPageSubTitle}" Margin="20, 20" />
+
+                    <TextBlock Margin="20, 0, 20, 10" Style="{StaticResource InfoPageSubSubTitle}" >In- en uitchecken</TextBlock>
+                    <TextBlock Margin="20, 0, 20, 20" Style="{StaticResource InfoPageText}"  >
+                        De kaartlezers voor het reizen met de trein vindt u in de hal of op de perrons van de stations. U kunt niet in de trein zelf in- en uitchecken. Let altijd goed op dat u incheckt bij een kaartlezer van het vervoerbedrijf waarmee u reist. Reist u met NS, kies dan de NS kaartlezer. Reist u met Arriva, kies dan de Arriva kaartlezer. Als u overstapt van een Arriva trein naar een NS trein, of andersom, moet u voor elke vervoerder apart in- en uitchecken. Maakt u een reis met een overstap en u blijft bij dezelfde vervoerder, dan hoeft u tussendoor niet uit- en in te checken.
+                    </TextBlock>
+                    <Image Source="../Assets/Images/kaartlezers_trein.jpg" Margin="20, 0, 20, 0" Height="200" />
+
+                    <TextBlock Margin="20, 40, 20, 10" Style="{StaticResource InfoPageSubSubTitle}" >Kaartcontrole in de trein</TextBlock>
+                    <TextBlock TextWrapping="Wrap" Margin="20, 0, 20, 0" Style="{StaticResource InfoPageText}">
+                        Als de conducteur langskomt om uw kaartje te controleren, kunt u hem simpelweg uw OV-chipkaart geven. Hij controleert dan of u juist bent ingecheckt.
+                    </TextBlock>
+
+                    <TextBlock Margin="20, 40, 20, 10" Style="{StaticResource InfoPageSubSubTitle}" >Overstappen</TextBlock>
+                    <TextBlock Style="{StaticResource InfoPageText}" Margin="20, 0, 20, 20" >
+                        Wanneer u tijdens uw treinreis wil overstappen op een andere trein, hoeft u tijdens die overstap niet in en uit te checken. U kunt dan gewoon inchecken bij uw startpunt en uitchecken bij uw eindpunt.
+                    </TextBlock>
+
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>

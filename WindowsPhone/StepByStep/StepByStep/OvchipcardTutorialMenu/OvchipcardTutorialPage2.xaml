@@ -1,0 +1,62 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Step_By_Step.OvchipcardTutorialMenu.OvchipcardTutorialPage2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="False">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Background="{StaticResource ThemeColor}">
+            <Image Source="../Assets/Images/stappen.png" Tap="Steps_Tap"/>
+            <Image Source="../Assets/Images/pijllinks.png" Margin="20,0,0,0" Tap="back_tap"/>
+            <TextBlock Width="250" Text="2. OV-chipkaart kopen" Margin="20,0,0,0" Style="{StaticResource InfoPageTitle}" />
+            <Image Source="../Assets/Images/pijlrechts.png" Tap="next_tap"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="0,0,0,0">
+            <ScrollViewer>
+
+                <StackPanel>
+                    <TextBlock Text="OV-chipkaart kopen" Style="{StaticResource InfoPageSubTitle}" Margin="20, 20" />
+                    <TextBlock Style="{StaticResource InfoPageText}" Margin="20, 0, 20, 20" >
+                        De OV-chipkaart kost 7,50 euro en is, afhankelijk van welk soort kaart u koopt, 4 of 5 jaar geldig.
+                    </TextBlock>
+               
+                    <TextBlock Margin="20, 40, 20, 10" Style="{StaticResource InfoPageSubSubTitle}" >Persoonlijke OV-chipkaart kopen</TextBlock>
+                    <TextBlock Margin="20, 0, 20, 10" Style="{StaticResource InfoPageText}" >
+                        De persoonlijke OV-chipkaart kunt u online aanvragen of via een formulier dat u kunt afhalen bij NS loketten en Qbuzz servicepunten.
+                    </TextBlock>
+                    <TextBlock  Margin="20, 0, 20, 10" Style="{StaticResource InfoPageText}" >
+                        Bij het online aanvragen heeft u een digitale pasfoto nodig en moet u beschikken over internetbankieren om met iDeal te kunnen betalen. Bij het aanvragen via een formulier heeft u alleen een pasfoto nodig.
+                    </TextBlock>
+                    <TextBlock Margin="20, 0, 20, 20" Style="{StaticResource InfoPageText}" >
+                        Na behandeling van uw aanvraag wordt uw OV-chipkaart naar u opgestuurd.
+                    </TextBlock>
+                    
+                    <TextBlock Margin="20, 40, 20, 10" Style="{StaticResource InfoPageSubSubTitle}" >Anonieme OV-chipkaart kopen</TextBlock>
+                    <TextBlock Margin="20, 0, 20, 20" Style="{StaticResource InfoPageText}" >
+                        De anonieme OV-chipkaart is te koop bij een verkoopautornaat, bij een NS—Ioket of bij een Qbuzz servicepunt. Verkoopautomaten zijn te vinden in sommige winkels (vaak tabakzaken en postkantoren). Op de website van de OV-chipkaart kunt u zoeken naar een verkooppunt bij u in de buurt.
+                    </TextBlock>
+                </StackPanel>
+
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>

@@ -1,0 +1,89 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Step_By_Step.MainMenu.ApplicationTutorial"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="False">
+
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Background="{StaticResource ThemeColor}">
+            <Image Source="{StaticResource HomeButton}" Tap="Homebutton_tap" />
+            <TextBlock Text="Introductie bij eerste keer opstarten" Style="{StaticResource SubMenuPageTitle}"  Width="370"/>
+         </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="0,0,0,0">
+            <ScrollViewer>
+                <StackPanel>
+
+                    <TextBlock Margin="20, 20, 20, 20" Foreground="Black" TextWrapping="Wrap">
+                        Tijdens het gebruiken van deze applicatie komt u een aantal iconen tegen. De betekenis van deze iconen is als volgt:
+                    </TextBlock>
+                    <Grid Margin="20, 0, 20, 10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="20*" />
+                            <ColumnDefinition Width="80*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Image Grid.Row="0" Grid.Column="0" Source="../Assets/Images/speaker_icon.png" Height="30" />
+                        <TextBlock Foreground="Black"  Grid.Row="0" Grid.Column="1" TextWrapping="Wrap" Margin="0, 10, 0, 10">
+                            Als u op dit icoon drukt, zal de tekst op de pagina hardop worden voorgelezen.
+                        </TextBlock>
+
+                        <Image Grid.Row="1" Grid.Column="0" Source="../Assets/Images/informatieicoon.png" Height="30" />
+                        <TextBlock Foreground="Black"  Grid.Row="1" Grid.Column="1" TextWrapping="Wrap" Margin="0, 10, 0, 10">
+                            Als u op het informatie icoon drukt, wordt er een pop-up geopend met meer informatie over een onderwerp. U kunt de pop-up weer sluiten door op het kruisje rechts bovenin beeld te drukken.
+                        </TextBlock>
+
+                        <Image Grid.Row="2" Grid.Column="0" Source="../Assets/Images/swipe_icon.jpg" Height="60" />
+                        <TextBlock Foreground="Black"  Grid.Row="2" Grid.Column="1" TextWrapping="Wrap" Margin="0, 10, 0, 10">
+                            U kunt tussen stappen navigeren door de pijltjes bovenin beeld te gebruiken, of door een swype beweging te maken (van links naar rechts over het scherrn vegen of andersom).
+                        </TextBlock>
+
+                        <TextBlock Grid.Row="3" Grid.Column="0" Foreground="Gray" HorizontalAlignment="Center" VerticalAlignment="Center" ><Underline>Link</Underline></TextBlock>
+                        <TextBlock Foreground="Black"  Grid.Row="3" Grid.Column="1" TextWrapping="Wrap" Margin="0, 10, 0, 10">
+                            In de tekst staan soms klikbare links. Het kan zijn dat als u hier op klikt, u uit de applicatie wordt gehaald omdat bijvoorbeeld een website wordt geopend.
+                        </TextBlock>
+
+                        <Image Grid.Row="4" Grid.Column="0" Source="../Assets/Images/menu.png" Height="60" />
+                        <TextBlock Foreground="Black"  Grid.Row="4" Grid.Column="1" TextWrapping="Wrap" Margin="0, 10, 0, 10">
+                            Met deze knop gaat u terug naar het hoofdmenu.
+                        </TextBlock>
+
+                        <Image Grid.Row="5" Grid.Column="0" Source="../Assets/Images/stappen.png" Height="60" />
+                        <TextBlock Foreground="Black"  Grid.Row="5" Grid.Column="1" TextWrapping="Wrap" Margin="0, 10, 0, 10">
+                            Met deze knop gaat u terug naar het stappen overzicht.
+                        </TextBlock>
+
+                    </Grid>
+
+                </StackPanel>
+            </ScrollViewer>
+
+        </Grid>
+    </Grid>
+</phone:PhoneApplicationPage>

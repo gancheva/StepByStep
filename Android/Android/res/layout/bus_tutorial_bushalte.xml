@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarStyle="outsideInset">
+
+  <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bus_3_title"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bus_3_subtitle_1"
+        android:paddingTop="10dp"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+		android:textSize="15dp"
+        android:text="@string/bus_3_text_1"
+        />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="@string/bus_3_subtitle_2"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bus_3_text_2"
+        android:textSize="15dp"/>
+    
+    <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:rotation="-90"
+        android:src="@drawable/bus_tut_img2"/>
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bus_3_text_3"
+        android:textSize="15dp"/>
+    
+    <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:rotation="-90"
+        android:src="@drawable/bus_tut_img3"/>
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bus_3_text_4"
+        android:textSize="15dp"/>
+    
+    <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:rotation="-90"
+        android:src="@drawable/bus_tut_img4"/>
+    
+    </LinearLayout> 
+    
+    
+</ScrollView>

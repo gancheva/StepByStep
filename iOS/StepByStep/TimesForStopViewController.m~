@@ -1,0 +1,205 @@
+//
+//  TimesForStopViewController.m
+//  StepByStep
+//
+//  Created by Mark Boers on 10/11/13.
+//  Copyright (c) 2013 iTract. All rights reserved.
+//
+
+#import "TimesForStopViewController.h"
+#import "TimeCell.h"
+#import "AFHTTPRequestOperationManager.h"
+#import "BusTime.h"
+
+@interface TimesForStopViewController ()
+@property (strong, nonatomic) IBOutlet UITableView *timeTableView;
+@property (strong, nonatomic) NSArray *arrivalTimes;
+@property (strong, nonatomic) NSArray *departureTimes;
+@property AFHTTPRequestOperationManager *manager;
+@end
+
+@implementation TimesForStopViewController
+@synthesize stop;
+@synthesize timeTableView;
+@synthesize departureTimes;
+@synthesize arrivalTimes;
+@synthesize manager;
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    NSURL *baseURL = [NSURL URLWithString:@"http://itract.cs.kau.se/"];
+    manager = [[AFHTTPRequestOperationManager alloc] initWithBaseURL:baseURL];
+    [timeTableView setDataSource:self];
+    [timeTableView setDelegate:self];
+	// Do any additional setup after loading the view.
+}
+
+//Gets all stop times for a given stop. This is hardcoded for the time being. Times are in epoch milliseconds
+-(void)getAllStopTimes {
+    NSMutableDictionary *mutableParams = [NSMutableDictionary dictionary];
+    [mutableParams setObject:[NSNumber numberWithDouble:stop.location.latitude] forKey:@"lat"];
+    [mutableParams setObject:[NSNumber numberWithDouble:stop.location.longitude] forKey:@"lon"];
+    [mutableParams setObject:stop.agencyId forKey:@"agencyId"];
+    [mutableParams setObject:stop.stopId forKey:@"stopId"];
+    
+    double time = [[NSDate date] timeIntervalSince1970];
+    time = time + (3600 * 5);
+    NSNumber *currentTime = [NSNumber numberWithDouble:(time * 1000)];
+    [mutableParams setObject:currentTime forKey:@"startTime"];
+    NSNumber *endTime = [NSNumber numberWithDouble:((time + 3600) *1000)];
+    [mutableParams setObject:endTime forKey:@"endTime"];
+    
+    NSDictionary *params = [[NSDictionary alloc] initWithDictionary:mutableParams];
+    //Self object for use in block to prevent deadlock
+    __block TimesForStopViewController *blocksafeSelf = self;
+        AFHTTPRequestOperationManager *localManager = [AFHTTPRequestOperationManager manager];
+        localManager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
+        [localManager GET:@"http://itract.cs.kau.se:8081/proxy/api/transit/arrivalsAndDeparturesForStop?lat=59.37919176435972&lon=13.498671776845185&agencyId=601&stopId=7421275&startTime=1382602879730&endTime=1382689279730" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                NSDictionary *responseDict = [responseObject objectAtIndex:0];
+                [blocksafeSelf processTimes:[responseDict objectForKey:@"data"]];
+            });
+        } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+            NSLog(@"Error: %@", error);
+        }];
+}
+
+//Parse given dataarray into appropriate array of time objects
+-(void)processTimes:(NSDictionary *)response {
+    NSArray *arrivals = [response objectForKey:@"arrivals"];
+    NSArray *departures = [response objectForKey:@"departures"];
+    NSMutableArray *mutableArrivalList = [NSMutableArray array];
+    NSMutableArray *mutableDeparturesList = [NSMutableArray array];
+    for(NSDictionary *dict in arrivals) {
+        BusTime *newTime = [[BusTime alloc] init];
+        newTime.agencyName = [dict objectForKey:@"agencyName"];
+        newTime.delay = [dict objectForKey:@"delay"];
+        newTime.routeId = [dict objectForKey:@"routeId"];
+        newTime.routeShortName = [dict objectForKey:@"routeShortName"];
+        newTime.routeType = [dict objectForKey:@"routeType"];
+        newTime.time = [dict objectForKey:@"time"];
+        newTime.tripHeadSign = [dict objectForKey:@"tripHeadsign"];
+        [mutableArrivalList addObject:newTime];
+    }
+    for(NSDictionary *dict in departures) {
+        BusTime *newTime = [[BusTime alloc] init];
+        newTime.agencyName = [dict objectForKey:@"agencyName"];
+        newTime.delay = [dict objectForKey:@"delay"];
+        newTime.routeId = [dict objectForKey:@"routeId"];
+        newTime.routeShortName = [dict objectForKey:@"routeShortName"];
+        newTime.routeType = [dict objectForKey:@"routeType"];
+        newTime.time = [dict objectForKey:@"time"];
+        newTime.tripHeadSign = [dict objectForKey:@"tripHeadsign"];
+        [mutableDeparturesList addObject:newTime];
+    }
+    arrivalTimes = [[NSArray alloc] initWithArray:mutableArrivalList];
+    departureTimes = [[NSArray alloc] initWithArray:mutableDeparturesList];
+    [timeTableView reloadData];
+}
+
+#pragma mark -
+#pragma mark TableView
+-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    switch (section) {
+        case 0:
+            return @"Vertrekkende bussen";
+            break;
+            
+        case 1:
+            return @"Binnenkomende bussen";
+            break;
+            
+        default:
+            break;
+    }
+    return @"";
+}
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 2;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    switch (section) {
+        case 0:
+            return [departureTimes count];
+            break;
+            
+        case 1:
+            return [arrivalTimes count];
+            break;
+        default:
+            break;
+    }
+    return 0;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        return 80;
+    }
+    else {
+        return 60;
+    }
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *cellIdentifier = @"StopTimeCell";
+    
+    TimeCell *cell = (TimeCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    BusTime *time;
+    switch (indexPath.section) {
+        case 0: {
+            time = [arrivalTimes objectAtIndex:indexPath.row];
+            break;
+        }
+            
+        case 1: {
+            time = [departureTimes objectAtIndex:indexPath.row];
+            break;
+        }
+            
+        default: {
+            time = [departureTimes objectAtIndex:indexPath.row];
+            break;
+        }
+    }
+
+    cell.stopName.text = time.tripHeadSign;
+    NSDate *date = [NSDate dateWithTimeIntervalSince1970:([time.time doubleValue] / 1000)];
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"HH:mm:ss"];
+    cell.stopTime.text = [NSString stringWithFormat:@"%@", [formatter stringFromDate:date]];
+    return cell;
+}
+
+- (IBAction)popView:(UIButton *)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    [self getAllStopTimes];
+}
+
+- (NSUInteger)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskPortrait;
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+@end

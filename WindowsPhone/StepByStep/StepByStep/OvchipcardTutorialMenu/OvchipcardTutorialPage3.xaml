@@ -1,0 +1,45 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Step_By_Step.OvchipcardTutorialMenu.OvchipcardTutorialPage3"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="False">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Background="{StaticResource ThemeColor}">
+            <Image Source="../Assets/Images/stappen.png" Tap="Steps_Tap"/>
+            <Image Source="../Assets/Images/pijllinks.png" Margin="20,0,0,0" Tap="back_tap"/>
+            <TextBlock Width="250" Text="3. Voldoende saldo op uw kaart" Margin="20,0,0,0" Style="{StaticResource InfoPageTitle}"/>
+            <Image Source="../Assets/Images/pijlrechts.png" Tap="next_tap"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="0,0,0,0">
+            <ScrollViewer>
+
+                <StackPanel>
+                    <TextBlock Text="Voldoende saldo op uw kaart" Style="{StaticResource InfoPageSubTitle}" Margin="20, 20" />
+                    <TextBlock Style="{StaticResource InfoPageText}" Margin="20, 0, 20, 20" >
+                        Om te kunnen reizen met uw OV—chipkaart rnoet er genoeg ‘saldo' op uw kaart staan. U kunt geld op uw kaart zetten (opwaarderen) bij oplaadautomaten. Bij een oplaadpunt betaalt u met een bankpas. U vindt oplaadautomaten in supermarkten, bij stations en boekhandels zoals Primera en Bruna. U kunt ook kiezen voor automatisch opladen. U geeft de bank opdracht om automatisch geld op uw OV-chipkaart te zetten als het saldo minder is dan 5 euro. Zo staat er altijd genoeg geld op uw OV-chipkaart. Automatisch opladen kunt u aanvragen via internet of met een formulier.
+                    </TextBlock>
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>

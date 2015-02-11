@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ovapp.stepbystep"
+    android:versionCode="1"
+    android:versionName="1.0" android:installLocation="auto">
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="17" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+ 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+ 	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/> 
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:theme="@style/Theme.MyTheme" >
+        <activity
+            android:name="com.StepByStep.Main.FirstTimeScreen"
+            android:label="@string/title_activity_main"
+            android:noHistory="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.StepByStep.Main.MainMenu"
+            android:label="@string/title_activity_main_menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MenuTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.StepByStep.Main.Travelbybus"
+            android:label="@string/title_activity_travelbybus"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyTheme"
+            android:uiOptions="splitActionBarWhenNarrow" >
+        </activity>
+        <activity
+            android:name="com.StepByStep.Main.TravelByTrain"
+            android:label="@string/title_activity_travelbytrain"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyTheme" >
+        </activity>
+        <activity
+            android:name="com.StepByStep.Main.OVchipkaart"
+            android:label="@string/title_activity_ovchipkaart"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyTheme" >
+        </activity>
+        <activity
+            android:name="com.StepByStep.Main.BusTutorialActivity"
+            android:label="@string/title_activity_bus_tutorial"
+            android:screenOrientation="portrait"
+            android:uiOptions="splitActionBarWhenNarrow" >
+        </activity>
+        <activity
+            android:name="com.StepByStep.Main.OVChipKaartTutorialActivity"
+            android:label="@string/title_activity_ovchip_kaart_tutorial"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.StepByStep.Main.TreinTutorialActivity"
+            android:label="@string/title_activity_trein_tutorial"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.StepByStep.Main.ApplicationExplanation"
+            android:label="@string/title_activity_application_explanation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.StepByStep.Main.ApplicationExplanationFirstTime"
+            android:label="@string/title_activity_application_explanation"
+            android:noHistory="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.StepByStep.Main.VideoActivity"
+            android:label="@string/title_activity_video"
+            android:launchMode="singleTask"
+             android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >"
+        </activity>
+        <activity 
+            android:name="com.StepByStep.Main.BusStops"
+            android:label="@string/title_activity_busStops"
+            android:screenOrientation="portrait"></activity>
+        <activity 
+            android:name="com.StepByStep.Main.BusArrivals"
+            android:label="@string/title_activity_bus_arrivals"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name="com.StepByStep.Main.MapActivity"
+            android:label="@string/title_activity_map"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

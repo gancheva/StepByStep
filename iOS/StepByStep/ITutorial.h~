@@ -1,0 +1,16 @@
+//
+//  ITutorial.h
+//  StepByStep
+//
+//  Created by Mark Boers on 31/10/13.
+//  Copyright (c) 2013 iTract. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface ITutorial : NSObject
+
+@property (nonatomic, strong) NSArray *titles;
+@property (nonatomic, strong) NSArray *views;
+
+@end

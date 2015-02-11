@@ -1,0 +1,15 @@
+//
+//  BusTime.m
+//  StepByStep
+//
+//  The model for a bus time object
+//
+//  Created by Mark Boers on 11/11/13.
+//  Copyright (c) 2013 iTract. All rights reserved.
+//
+
+#import "BusTime.h"
+
+@implementation BusTime
+
+@end

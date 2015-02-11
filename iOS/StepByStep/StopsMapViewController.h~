@@ -1,0 +1,18 @@
+//
+//  StopsMapViewController.h
+//  StepByStep
+//
+//  Created by Mark Boers on 10/11/13.
+//  Copyright (c) 2013 iTract. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
+#import <CoreLocation/CoreLocation.h>
+
+@interface StopsMapViewController : UIViewController <MKMapViewDelegate>
+
+@property (nonatomic, strong) NSArray *stopsList;
+@property (nonatomic, strong) CLLocation *currentLocation;
+
+@end

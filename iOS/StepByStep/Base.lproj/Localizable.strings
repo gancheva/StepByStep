@@ -1,0 +1,201 @@
+/* 
+  Localizable.strings
+  StepByStep
+*/
+
+//Main menu
+"main_title_upper" = "Traveling with";
+"main_title_lower" = "Public Transport";
+
+"main_menu_bus" = "Traveling by bus";
+"main_menu_train" = "Traveling by train";
+"main_menu_ov" = "OV-Chipcard information";
+"main_menu_stops" = "Nearest busstops";
+"main_menu_app" = "Application tutorial";
+
+//Bus menu
+"bus_menu_plan" = "Bustrip planning";
+"bus_menu_pay" = "Bustrip payment";
+"bus_menu_stop" = "At the busstop";
+"bus_menu_trip" = "The bustrip";
+"bus_menu_travelback" = "Traveling back";
+
+//Train menu
+"train_menu_plan" = "Traintrip planning";
+"train_menu_station" = "At the station";
+"train_menu_ticket" = "Check in or buy a card";
+"train_menu_trip" = "The traintrip";
+"train_menu_checkout" = "Checkout";
+"train_menu_travelback" = "Traveling back";
+
+//OV menu
+"ov_menu_info" = "The OV-chipcard";
+"ov_menu_buy" = "Buy OV-chipcard";
+"ov_menu_charge" = "Enough credit on your card";
+"ov_menu_bus" = "OV-chipcard in the bus";
+"ov_menu_train" = "OV-chipkaart in the train";
+"ov_menu_forgot" = "Forgot to check out";
+"ov_menu_lost" = "OV-chipcard defect or lost";
+
+//Tutorial main
+"Page %d of %lu" = "Page %d of %lu";
+
+//Bus tutorial page 1
+"bus_1_title" = "Uw busreis plannen";
+"bus_1_subtitle_1" = "Voordat u op reis gaat is het handig om een aantal dingen te weten:";
+"bus_1_text_1" = "1. Van welke adres vertrekt u?\n2. Waar is de bushalte?\n3. Wat is uw bestemming?\n4. Op welke datum wilt u reizen?\n5. hoelaat wilt u vertrekken (of aankomen)?\n";
+"bus_1_text_2" = "Met deze gegevens kunt u uw reis gaan plannen. Er zijn drie manieren om uw reis te plannen en/of reistijden te achterhalen.";
+"bus_1_text_3" = "1. Via het internet";
+"bus_1_text_4" = "2. Telefonisch";
+"bus_1_text_5" = "3. Bij de bushalte";
+"bus_dialog_internet_title" = "Plannen via internet";
+"bus_dialog_internet_text" = "Op de website van Qbuzz (www.Qbuzz.nl) vindt u een compleet overzicht van alle haltes en buslijnen in uw buurt als u uw adres invult. Ook vindt u hier een overzicht van alle vertrektijden. Is het lijnnummer al bekend, dan kunt u door direct het lijnnummer in te vullen de diensregeling opvragen.\n\n Via de website www.9292ov.nl kunt u een compleet reisadvies opvragen, inclusief bijbehorende kosten. U vult in waarvandaan u vertrekt en waar u heen wilt. U krijgt dan een lijst met alle mogelijkheden. In de lijst kun u een reis aanklikken en zien welke buslijn(en) u moet hebben. u kunt ook alvast bekijken wat de reis kost.";
+"bus_dialog_telephone_title" = "Bustijden telefonisch opvragen";
+"bus_dialog_telephone_subtitle_1" = "Qbuzz Groningen Drenthe";
+"bus_dialog_telephone_subtitle_2" = "Klantenservice 9292";
+"bus_dialog_telephone_text_1" = "U kunt bij de klantenservice van Qbuzz de dienstregeling van één of meer buslijnen in Groningen en Drenthe opvragen. U krijgt gratis een print thuisgestuurd. U kunt dan thuis bekijken wanneer de bussen rijden. Het telefoonnummer van de klantenservice is 0900 - 72 89 965 (Iokaal tarief).";
+"bus_dialog_telephone_text_2" = "Wilt u hulp bij het plannen van uw reis, dan kunt u bellen met de klantenservice van 9292. Het telefoonnummer is 0900 - 9292 (70 eurocent per minuut). 9292 geeft informatie over reizen in heel Nederland.";
+"bus_dialog_bushalte_title" = "Bustijden bekijken bij de bushalte";
+"bus_dialog_bushalte_text" = "Bij iedere halte vindt u een u een dienstregeling met de vertrektijden van de bussen, die daar vandaan vertrekken.";
+
+//Bus tutorial page 2
+"bus_2_subtitle_1" = "Er zijn 2 manieren om uw busreis te betalen:";
+"bus_2_subtitle_2" = "Eurokaartjes";
+"bus_2_subtitle_3" = "De OV-chipkaart";
+"bus_2_text_1" = "1. Eurokaartje";
+"bus_2_text_1_1" = "2. De OV-chipkaart";
+"bus_2_text_2" = "Reist u maar af en toe met de bus? Dan kunt u in de bus bij de chauffeur een kaartje kopen. U betaalt met contant geld. Welk kaartje u nodig hebt, hangt af van de afstand die u reist. De chauffeur weet welk kaartje u nodig hebt, als u vertelt als u vertelt waar u heen moet. Een kaartje kost 2,5 of 8 euro. Er is ook een dagkaart voor 16 euro of een dal-dagkaart voor 10 euro.";
+
+"bus_dialog_eurokaartje_text" = "Reist u maar af en toe met de bus? Dan kunt u in Groningen en Drenthe tegen contante betaling een Eurokaartje bij de chauffeur kopen. Deze kaartjes zijn verkrijgbaar in vier soorten: 2-euro kaartjes, 5-euro kaartjes, 8-euro kaartjes en Dagkaarten. De afstand die u aflegt, bepaalt de variant van het kaartje.";
+"bus_dialog_ovchipkaart_text" = "Belangrijk: Een uitgebreidere uitleg over de OV-chipkaart is te vinden in het hoofdmenu.\n\nDe OV-chipkaart is het nieuwe vervoersbewijs in Nederland. Je kunt hem gebruiken om te reizen met de trein, de bus, de tram en de metro. De OV-chipkaart komt in de plaats van strippenkaarten en treinkaartjes.\n\n	Een OV-chipkaart is te koop bij een Qbuzz servicepunt, op het station of bij een OV-chipkaart automaat. Een persoonlijke OV-chipkaart is aan te vragen via internet of via een formulier.\n\nAls u een OV-chipkaart hebt, kunt u deze opladen bij een OV-chipkaart automaat. Deze zijn vaak te vinden in winkels als Primera of in supermarkten, en op het station.\n\nVoor u de trein in stapt of als u de bus in stapt, houdt u de OV-chipkaart simpelweg voor de lezer, en als u weer uitstapt, doet u dit weer. Het systeem berekent dan welke reis u heeft gemaakt, en zal de kosten daarvoor automatisch van uw saldo afschrijven.";
+
+//Bus tutorial page 3
+"bus_3_subtitle_1" = "Naar de bushalte";
+"bus_3_subtitle_2" = "Instappen";
+"bus_3_text_1" = "We raden u aan om ongeveer 5 minuten voor vertrek bij de bushalte te zijn. Op het gele haltebord staan de lijnen die vanaf de halte vertrekken. [plaatje] Onder het haltebord of in het bushokje hangt een overzicht van de vertrektijden van de bus.";
+"bus_3_text_2" = "Voorop de bus staan het lijnnummer en de plaats waar de bus heen gaat. Daaraan ziet u welke bus u moet hebben.";
+"bus_3_text_3" = "Als de bus waarmee u wilt reizen eraan komt steek dan uw hand op. De chauffeur weet dan zeker dat u mee wilt.";
+"bus_3_text_4" = "Houd bij het instappen uw OV-chipkaart voor de kaartlezer. Heeft u geen OV-chipkaart? Koop dan een kaartje bij de chauffeur.";
+
+//Bus tutorial page 4
+"bus_4_subtitle_1" = "Overstappen";
+"bus_4_subtitle_2" = "Reisinformatie op de schermen";
+"bus_4_subtitle_3" = "Uitstappen";
+"bus_4_text_1" = "Moet u overstappen op een andere bus? Zeg het tegen de chauffeur, zodat hij de chauffeur van de bus die u moet hebben kan waarschuwen.";
+"bus_4_text_2" = "Op de schermen in de bus kunt u de namen van de haltes zien waar de bus als eerste Langskomt. Zo kunt u zien wanneer uw uitstaphalte komt. De haltenamen worden ook omgeroepen.";
+"bus_4_text_3" = "In de bussen die naar een treinstation rijden, kunt u op de schermen ook lezen hoe laat de eerstvolgende treinen vertrekken.";
+"bus_4_text_4" = "Druk op tijd op de stopknop als u er bij de eerstvolgende halte uit moet. Reist u met de OV-chipkaart, houdt uw kaart dan bij de hand. Bij het uitstappen houdt u uw OV-chipkaart voor de kaartlezer om uit te checken.";
+
+//Bus tutorial page 5
+"bus_5_subtitle_1" = "De terugreis";
+"bus_5_text_1" = "Het is handig om bij het uitstappen alvast te kijken waar u weer kunt instappen voor de terugreis. Meestal is dit aan de overzijde van de straat. Dit kunt u ook thuis al bekijken op onze website.";
+"bus_5_text_2" = "Dit was de laatste stap in het onderdeel \"Reizen met de bus\".";
+
+//Train tutorial page 1
+"train_tut_1_subtitle_1" = "Voordat u op reis gaat is het handig een aantal dingen te weten:";
+"train_tut_1_text_1" = "1. Van welk adres vertrekt u?\n2. Wat is uw bestemming?\n3.Op welke datum wilt u reizen?";
+"train_tut_1_text_2" = "Met deze gegevens kunt u via het internet uw reis plannen. Afhankelijk van met welke vervoerder u reist, kan dat bijvoorbeeld op:";
+"train_tut_1_text_3" = "www.9292ov.nl";
+"train_tut_1_text_4" = "(Als u met NS reist)\nwww.ns.nl";
+"train_tut_1_text_5" = "(Als u met Arriva reist)\nwww.arriva.nl";
+"train_tut_1_text_6" = "Weet u nog niet met welke vervoerder u gaat reizen? www.9292.nl geeft dit automatisch aan tijdens het plannen van uw reis.";
+"train_dialog_negentwee_title" = "Plannen via 9292.nl";
+"train_dialog_negentwee_text_1" = "Op www.9292.nl kunt u uw reis plannen door uw startlocatie en eindbestemming op te geven, en eventueel nog een datum en tijd waarop u wil reizen.";
+"train_dialog_negentwee_subtitle_1" = "Vertrek/aankomst";
+"train_dialog_negentwee_text_2" = "Als u de optie “Vertrek” aanvinkt, wordt ervan uitgegaan dat u om de opgegeven tijd wil vertrekken; als u de optie “Aankomst” aanvinkt dat u om de opgegeven tijd aan wil komen.";
+"train_dialog_negentwee_subtitle_2" = "Welke vervoerder?";
+"train_dialog_negentwee_text_3" = "Nadat u op “Plan mijn reis” hebt geklikt, verschijnt uw reisadvies in beeld. u met de trein reist, ziet u in de regel van de kop die het type trein aangeeft, bijvoorbeeld “Sprinter” of “Intercity”, aan de rechterkant met welke vervoerder u reist. Dat kan bijvoorbeeld NS zijn of Arriva.";
+"train_dialog_ns_title" = "Plannen via ns.nl";
+"train_dialog_ns_text_1" = "Op www.ns.nl kunt u uw reis plannen door uw startlocatie en eindbestemming op te geven, en eventueel nog een datum en tijd waarop u wil reizen.";
+"train_dialog_ns_subtitle_1" = "Vertrek/aankomst";
+"train_dialog_ns_text_2" = "Als u de optie “Vertrek” aanvinkt, wordt ervan uitgegaan dat u om de opgegeven tijd wil vertrekken; als u de optie “Aankomst” aanvinkt dat u om de opgegeven tijd aan wil komen";
+"train_dialog_arriva_title" = "Plannen via arriva.nl";
+"train_dialog_arriva_text_1" = "Op www.arriva.nl kunt u uw reis plannen door uw startlocatie en eindbestemming op te geven, en eventueel nog een datum en tijd waarop u wil reizen.";
+"train_dialog_arriva_subtitle_1" = "Vertrek/aankomst";
+"train_dialog_arriva_text_2" = "Als u de optie “Vertrek” aanvinkt, wordt ervan uitgegaan dat u om de opgegeven tijd wil vertrekken; als u de optie “Aankomst” aanvinkt dat u om de opgegeven tijd aan wil komen";
+
+//Train tutorial page 2
+"train_tut_2_subtitle_1" = "Reisinformatie";
+"train_tut_2_subtitle_2" = "Welke trein gaat van welk perron?";
+"train_tut_2_subtitle_3" = "Informatieloketten";
+"train_tut_2_text_1" = "Ook op het station kunt u actuele reisinformatie vinden. Op het station staan borden geplaatst met overzichten van wanneer treinen rijden en waarnaartoe.";
+"train_tut_2_text_2" = "Boven het perron hangen borden die aangeven wat de eerstvolgende trein is die van dat perron vertrekt, hoe laat die vertrekt en waar die naartoe zal rijden.";
+"train_tut_2_text_3" = "Als u ergens vragen over heeft, kunt u altijd terecht bij een NS informatieloket. Deze zijn op ieder station te vinden.";
+
+//Train tutorial page 3
+"train_tut_3_text_1" = "Betalen voor uw treinreis kan op twee manieren: door in te checken met uw OV-chipkaart of door een kaartje te kopen. Meer uitleg over de OV-chipkaart kunt u vinden in het hoofdmenu.";
+"train_tut_3_text_2" = "U kunt inchecken met uw OV-chipkaart door deze voor een scanner van uw vervoerder(bijvoorbeeld NS ofArriva) te houden. Deze scanners zijn op het station te vinden.";
+"train_tut_3_subtitle_1" = "Treinkaartje";
+"train_tut_3_subtitle_2" = "Kaartjesautomaat gebruiken";
+"train_tut_3_text_3" = "Het is de bedoeling dat de OV-chipkaart op termijn alle papierenkaartjes zal gaan vervangen. Momenteel kunt u echter ook nog een papieren kaartje kopen om uw treinreis mee te betalen. Dit kan bij de kaartjesautomaat die u op het station kunt vinden.";
+"train_tut_3_text_4" = "De kaartjesautomaat heeft een touch-screen. U selecteert eerst wat voor soort reis u wilt maken, bijvoorbeeld een enkele reis of een dagretour. Vervolgens selecteert u waar u naartoe wilt. Daarna kunt u selecteren of u een kortingskaartje wilt kopen of een voor het volle tarief. Een kortingskaartje kunt u alleen gebruiken als u een kortingsabonnement heeft. Ten slotte selecteert u een betaalmethode en volgt u de aanwijzingen op het scherm om te betalen.";
+
+//Train tutorial page 4
+"train_tut_4_subtitle_1" = "";
+"train_tut_4_subtitle_2" = "";
+"train_tut_4_text_1" = "Nadat u bent ingecheckt of nadat u een kaartje heeft gekocht, bent u klaar om de train in te gaan. Als u uw reis al heeft gepland, weet u al van welk perron uw trein gaat. U kunt dan simpelweg naar dat perron lopen en de trein in stappen. Kijk voor de zekerheid wel even op de borden die boven het perron hangen of u hier daadwerkelijk in de juiste trein kunt stappen.";
+"train_tut_4_text_2" = "Als u nog niet weet van welk perron uw trein gaat, kunt u een informatiebord opzoeken op het station, iemand van uw vervoerder (bijvoorbeeld NS ofArriva) aanspreken, of bijvoorbeeld een NS informatieloket opzoekenen daar vragen om meer informatie.";
+"train_tut_4_text_3" = "Als u tijdens uw treinreis moet overstappen, hoeft u daarbij niet uit en in te checken. U hoeft pas uit te checken als u op uw eindbestemming bent aangekomen.";
+"train_tut_4_text_4" = "Als u moet overstappen, stapt u simpelweg uit op het station waarop u over moet stappen. Daar zoekt u het perron van waar de trein gaat waarop u over moet stappen. Als u het juiste perron heeft gevonden, kunt u simpelweg op dat perron weer in de trein stappen (controleer voor de zekerheid de borden die boven het perron hangen nog even om zeker te weten dat u in de juiste trein stapt).";
+
+//Train tutorial page 5
+"train_tut_5_text_1" = "Als uw trein is aangekomen op uw eindbestemming, stapt u uit de trein en houdt u uw -OV-chipkaart voor een chipkaartlezer van de vervoerder waarmee u hebt gereisd (bijvoorbeeld NS ofArriva). De kosten voor de reis worden dan automatischvan uw OV-chipkaart saldo afgeschreven.";
+
+//Train tutorial page 6
+"train_tut_6_text_1" = "Het kan handig zijn de terugreis alvast te plannen voordat u aan uw reis begint - zo hoeft u dat tijdens uw reis niet te doen. Het plannen en maken van de terugreis werkt verder hetzelfde als het maken van de heenreis. U kunt deze stapen dus ook volgen voor het plannen en maken van uw terugreis.";
+"train_tut_6_text_2" = "Dit was de Iaatste stap in het onderdeel \"Reizen met de trein\".";
+"hello_world" = "Hello world!";
+
+//OV tutorial page 1
+"ov_chipkaart_1_subtitle_1" = "Persoonlijke of anonieme OV-chipkaart";
+"ov_chipkaart_1_text_1" = "Met de OV-chipkaart kunt u in heel Nederland reizen met de bus, de trein, de tram en de metro. U moet zelf een OV-chipkaart aanschaffen en er ‘saldo’ opzetten. Zodra de kaart is opgeladen met een geldbedrag, kunt u ermee reizen. Een OV-chipkaart kost 7,50 en is vijfjaar geldig. U kunt zelf bepalen hoeveel geld u op de kaart zet. ledere keer als u een reis maakt met de OV-chipkaart, wordt er geld van de kaart afgeschreven.";
+"ov_chipkaart_1_text_2" = "U kunt kiezen tussen een persoonlijke OV-chipkaart en een anonieme OV-chipkaart. Op de persoonlijke kaart staat uw naam en uw gegevens zijn eraan gekoppeld. U bent de enige die van deze kaart mag gebruiken. De anonieme kaart heeft geen persoonlijke gegevens en kan ook door een andere persoon gebruikt worden. Elke reiziger heeft een eigen OV-chipkaart nodig.";
+
+//OV tutorial page 2
+"ov_chipkaart_2_subtitle_1" = "Persoonlijke OV-chipkaart kopen";
+"ov_chipkaart_2_subtitle_2" = "Anonieme OV-chipkaart kopen";
+"ov_chipkaart_2_text_1" = "De OV-chipkaart kost 7,50 euro en is, afhankelijk van welk soort kaart u koopt, 4 of 5 jaar geldig.";
+"ov_chipkaart_2_text_2" = "De persoonlijke OV-chipkaart kunt u online aanvragen of via een formulier dat u kunt afhalen bij NS loketten en Qbuzz servicepunten. Bij het online aanvragen heeft u een digitale pasfoto nodig en moet u beschikken over internetbankieren 0m met iDeal te kunnen betalen. Bij het aanvragen via een formulier heeft u alleen een pasfoto nodig. Na behandeling van uw aanvraag wordt uw OV-chipkaart naar u opgestuurd.";
+"ov_chipkaart_2_text_3" = "De anonieme OV-chipkaart is te koop bij een verkoopautornaat, bij een NS—Ioket of bij een Qbuzz servicepunt. Verkoopautomaten Zijn te vinden in sommige winkels (vaak tabakzaken en postkantoren). Op http://ov-chipkaart.nl kunt u zoeken naar een verkooppunt bij u in de buurt.";
+
+//OV tutorial page 3
+"ov_chipkaart_3_text_1" = "Om te kunnen reizen met uw OV—chipkaart rnoet er genoeg saldo op uw kaart staan. U kunt geld op uw kaart zetten (opwaarderen) bij oplaadautomaten. Bij een oplaadpunt betaalt u met een bankpas. U vindt oplaadautomaten in supermarkten, bij stations en boekhandels zoals Primera en Bruna. U kunt ook kiezen voor automatisch opladen. U geeft de bank opdracht om automatisch geld op uw OV-chipkaart te zetten als het saldo minder is dan 5. Zo staat er altijd genoeg geld op uw OV-chipkaart. Automatisch opladen kunt u aanvragen via internet of met een formulier.";
+
+//OV tutorial page 4
+"ov_chipkaart_4_subtitle_1" = "In- en uitchecken";
+"ov_chipkaart_4_subtitle_2" = "Overstappen";
+"ov_chipkaart_4_text_1" = "In de bus staat bij iedere ingang en uitgang een kaartlezer. U houdt de kaart voor de lezer om in te checken. Aan het einde van de reis houdt u uw de kaart voor de kaartlezer bij de uitgang om uit te checken. Er wordt dan berekend van waar naar waar u heeft gereisd, en de kosten voor die reis worden vervolgens automatisch van uw OV-chipkaart saldo afgeschreven.";
+"ov_chipkaart_4_text_2" = "Wanneer u tijdens de busreis overstapt naar een andere bus, checkt u altijd uit als u de bus uit gaat. U houdt de OV-chipkaart voor de kaartleze bij de uitgang van de bus. Vervolgens checkt u weer in als u instapt in de volgende bus.";
+
+//OV tutorial page 5
+"ov_chipkaart_5_subtitle_1" = "In- en uitchecken";
+"ov_chipkaart_5_subtitle_2" = "Kaartcontrole in de trein";
+"ov_chipkaart_5_subtitle_3" = "Overstappen";
+"ov_chipkaart_5_text_1" = "ID kaartlezers voor het reizen met de trein vindt u in de hal of op de perrons van de stations. U kunt niet in de trein zelf in- en uitchecken. Let altijd goed op dat u incheckt bij een kaartlezer van het vervoerbedrijf waarmee u reist. Reist u met NS, kies dan de NS kaartlezer. Reist u met Arriva, kies dan de Arriva kaartlezer.";
+"ov_chipkaart_5_text_2" = "Als u overstapt van een Arriva trein naar een NS trein, of andersom, moet u voor elke vervoerder apart in- en uitchecken. Maakt u een reis met een overstap en u blijft bij dezelfde vervoerder, dan hoeft u tussendoor niet uit- en in te checken.";
+"ov_chipkaart_5_text_3" = "Als de conducteur langskomt om uw kaartje te controleren, kunt u hem simpelweg uw OV-chipkaart geven. Hij controleert dan of u juist bent ingecheckt.";
+"ov_chipkaart_5_text_4" = "Wanneer u tijdens uw treinreis wil overstappen op een andere trein, hoeft u tijdens die overstap niet in en uit te checken. U kunt dan gewoon inchecken bij uw startpunt en uitchecken bij uw eindpunt.";
+
+//OV tutorial page 6
+"ov_chipkaart_6_text_1" = "Iedere keer als u incheckt met de OV-chipkaart wordt automatisch een bedrag afgeschreven als “borg” voor de reis. De vervoerder krijgt dat bedrag totdat u uitcheckt. Dan wordt het bedrag voor de reis afgeschreven en krijgt u de “borg” terug. Voor de bus is deze borg 4. Voor de trein is dat 20 als u zonder korting reist en 10 als u met korting reist. Als u vergeet uit te checken kunt u het teveel betaalde bedrag terug krijgen. U vult daarvoor een formulier in op internet bij de vervoerder of u vraagt een formulier op bij de klantenservice. U kunt ook geld terug krijgen als er een fout is gemaakt bij het afschrijven of als de kaartlezer kapot is en u niet kunt uitchecken. Wilt u echter van de trein overstappen op een bus, dan checkt u uit op het station en checkt u vervolgens weer in in de bus.";
+
+//OV tutorial page 7
+"ov_chipkaart_7_subtitle_1" = "Blokkeren bij verlies of diefstal";
+"ov_chipkaart_7_text_1" = "Uw OV-chipkaart is defect wanneer de kaartlezer in de bus geen enkele reactie geeft. Er gaat geen groen of rood lampje branden en u hoort geen geluidssignaal. Een rood lampje betekent dat uw kaart niet defect is, u heeft onvoldoende saldo, geen geldig abonnement of uw kaart/saldo is geblokkeerd. Informeer bij de klantenservice van Qbuzz hoe u een defecte kaart kunt inleveren en een nieuwe aan kunt vragen. Het telefoonnummer van de klantenservice is 0900 72 89 965 (lokaal tarief).";
+"ov_chipkaart_7_text_2" = "Bent u uw persoonlijke OV-chipkaart kwijt door verlies of diefstal? Via uw account op OV-chipkaart.nl kunt uw kaart laten blokkeren en een vervangende OV-chipkaart aanvragen. Op de vervangende kaart worden de reisproducten gezet die oude kaart stonden. Uw saldo wordt teruggestort op uw bankrekening. Als u gebruik maakt van automatisch opladen, hoeft u dit niet apart stop te zetten. Heeft u geen account op OV-chipkaart.nl? Neem dan contact op met de Klantenservice 0V-chipkaart. Het telefoonnummer is 0900-0980 0,10 p.m. Een anonieme OV-chipkaart kan niet worden geblokkeerd.";
+"ov_chipkaart_7_text_3" = "Dit was de laatste stap in het onderdeel OV-Chipkaart info.";
+
+//App tutorial
+"application_explenation_text_1" = "Tijdens het gebruiken van deze applicatie komt u een aantal iconen tegen. De betekenis van deze iconen is als volgt:";
+"application_explenation_text_2" = "Als u op dit icoon drukt, zal de tekst op de pagina hardop worden voorgelezen.";
+"application_explenation_text_3" = "Als u op het informatie icoon drukt, wordt er een pop-up geopend met meer informatie over een onderwerp. U kunt de pop-up weer sluiten door op het kruisje rechts bovenin beeld te klikken.";
+"application_explenation_text_4" = "U kunt tussen stappen navigeren door de pijltjes onderin beeld te gebruiken.";
+"application_explenation_text_5" = "Met deze knop gaat u terug naar het hoofdmenu.";
+"application_explenation_text_6" = "Met deze knop gaat u terug naar het stappen overzicht.";
+"application_explenation_dialog_title" = "Het informatie icoon";
+"application_explenation_dialog_text" = "U heeft het informatie icoon aangeklikt. Dit icoon was hier in dit geval echter alleen geplaatst ter illustratie. Op de pagina die u nu Ieest, bevindt zich daarom niet meer informatie. U kunt dit scherm sluiten en op het “Volgende” pijitje klikken dat u vervolgens rechts bovenin het scherm ziet. uit de applicatie wordt gehaald omdat bijvoorbeeld een website wordt geopend. Met deze knop gaat u terug naar het hoofdmenu.";
+
+//First time screen
+"first_screen_title" = "Introductie bij eerste keer opstarten";
+"first_time_screen_text_1" = "Het lijkt erop dat u deze applicatie voor de eerste keer heeft opgestart. Daarom volgt nu een kore uitleg over de werking van deze applicatie. U kunt deze uitleg later vanuit het hoofdmenu altijd weer openen.";
+"first_time_screen_text_2" = "Om naar de volgende stap te gaan, klikt u op het pijltje naar rechts, rechts onderin beeld. Om naar een vorige stap te gaan (wat nu niet kan, omdat dit de eerste stap is van de uitleg), klikt u op het pijlte naar links, links onderin beeld.";
